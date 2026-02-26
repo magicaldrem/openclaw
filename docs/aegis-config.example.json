@@ -1,0 +1,34 @@
+{
+  "agent": {
+    "model": "ollama/llama3",
+    "thinkingDefault": "low",
+    "verboseDefault": "off",
+    "sandbox": {
+      "mode": "non-main"
+    }
+  },
+  "gateway": {
+    "bind": "loopback",
+    "port": 18789,
+    "auth": {
+      "mode": "password",
+      "password": "VOTRE_MOT_DE_PASSE_SECURISE"
+    },
+    "tailscale": {
+      "mode": "off"
+    }
+  },
+  "channels": {
+    "whatsapp": {
+      "enabled": true,
+      "allowFrom": ["*"],
+      "dmPolicy": "pairing"
+    }
+  },
+  "ui": {
+    "assistant": {
+      "name": "Aegis Banking Assistant",
+      "avatar": "🏦"
+    }
+  }
+}
